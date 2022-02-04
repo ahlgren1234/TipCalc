@@ -12,6 +12,7 @@
 		D0A58A1427AD6E3000E3D033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A58A1327AD6E3000E3D033 /* Assets.xcassets */; };
 		D0A58A1727AD6E3000E3D033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A58A1627AD6E3000E3D033 /* Preview Assets.xcassets */; };
 		D0A58A1E27AD6F3400E3D033 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A58A1D27AD6F3400E3D033 /* CardView.swift */; };
+		D0A58A2027AD77A200E3D033 /* GuestCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A58A1F27AD77A200E3D033 /* GuestCountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D0A58A1327AD6E3000E3D033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A58A1627AD6E3000E3D033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0A58A1D27AD6F3400E3D033 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D0A58A1F27AD77A200E3D033 /* GuestCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				D0A58A0F27AD6E2F00E3D033 /* TipCalcApp.swift */,
 				D0A58A1127AD6E2F00E3D033 /* ContentView.swift */,
 				D0A58A1D27AD6F3400E3D033 /* CardView.swift */,
+				D0A58A1F27AD77A200E3D033 /* GuestCountView.swift */,
 				D0A58A1327AD6E3000E3D033 /* Assets.xcassets */,
 				D0A58A1527AD6E3000E3D033 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				D0A58A1227AD6E2F00E3D033 /* ContentView.swift in Sources */,
 				D0A58A1E27AD6F3400E3D033 /* CardView.swift in Sources */,
 				D0A58A1027AD6E2F00E3D033 /* TipCalcApp.swift in Sources */,
+				D0A58A2027AD77A200E3D033 /* GuestCountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
