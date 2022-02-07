@@ -24,7 +24,7 @@ struct GuestCountView: View {
             
             Text("\(guestCount)")
                 .foregroundColor(.primary)
-                .font(.system(size: 42, weight: .black, design: .monospaced))
+                .font(.system(size: 40, weight: .black, design: .monospaced))
             
             Button {
                 guestCount += 1
