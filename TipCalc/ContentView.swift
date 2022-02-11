@@ -49,6 +49,10 @@ struct ContentView: View {
         return amountPerPerson
     }
     
+    init() {
+        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(.indigo)
+    }
+    
     var body: some View {
         GeometryReader { geo in
             VStack(alignment: .center, spacing: 20) {
@@ -64,13 +68,56 @@ struct ContentView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
+                
+                TitleView(title: "BILL AMOUNT")
+                
+                HStack {
+                    Text("$")
+                        .foregroundColor(.primary)
+                        .font(.system(size: 60, weight: .black, design: .rounded))
+                    
+                    TextField("Amount", text: $checkAmount)
+                        .foregroundColor(.primary)
+                        .font(.system(size: 60, weight: .black, design: .rounded))
+                        .keyboardType(.decimalPad)
+                        .focused($isInputActive)
+                    
+                        .toolbar {
+                            ToolbarItemGroup(placement: .keyboard) {
+                                Spacer()
+                                Button("Done") {
+                                    isInputActive = false
+                                }
+                            }
+                        }
+                }
+                
+                TitleView(title: "SPLIT")
+                
+                GuestCountView(guestCount: $numberOfPeople)
             }
         }
+        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct TitleView: View {
+    
+    var title: String
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .foregroundColor(.indigo)
+                .fontWeight(.black)
+            
+            Spacer()
+        }
     }
 }
